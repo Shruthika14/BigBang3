@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Bigbang3API.props" />
+</Project>
