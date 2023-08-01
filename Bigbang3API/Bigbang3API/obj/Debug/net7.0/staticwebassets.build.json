@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "TB0Xp8JJ5ViDHM1dH5kgAYFNt0PRbDBE9tP76ZuI2ZI=",
+  "Source": "Bigbang3API",
+  "BasePath": "_content/Bigbang3API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Bigbang3API\\wwwroot",
+      "Source": "Bigbang3API",
+      "ContentRoot": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\",
+      "BasePath": "_content/Bigbang3API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Images\\empathymap",
+      "SourceId": "Bigbang3API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\",
+      "BasePath": "_content/Bigbang3API",
+      "RelativePath": "Images/empathymap",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\empathymap"
+    },
+    {
+      "Identity": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Images\\f",
+      "SourceId": "Bigbang3API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\",
+      "BasePath": "_content/Bigbang3API",
+      "RelativePath": "Images/f",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\f"
+    }
+  ]
+}

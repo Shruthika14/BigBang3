@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Images\\empathymap",
+      "PackagePath": "staticwebassets\\Images"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Images\\f",
+      "PackagePath": "staticwebassets\\Images"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Bigbang3API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Bigbang3API.props",
+      "PackagePath": "build\\Bigbang3API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Bigbang3API.props",
+      "PackagePath": "buildMultiTargeting\\Bigbang3API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Bigbang3API.props",
+      "PackagePath": "buildTransitive\\Bigbang3API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
