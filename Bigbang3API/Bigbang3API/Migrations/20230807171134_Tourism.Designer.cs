@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bigbang3API.Migrations
 {
     [DbContext(typeof(TouristDbContext))]
-    [Migration("20230801130011_Tourism")]
+    [Migration("20230807171134_Tourism")]
     partial class Tourism
     {
         /// <inheritdoc />
@@ -24,6 +24,66 @@ namespace Bigbang3API.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("Bigbang3API.Models.Booking", b =>
+                {
+                    b.Property<int>("BookingId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BookingId"));
+
+                    b.Property<string>("BookedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContactEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContactNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Destination")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("EndOfJourney")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NumberOfPeople")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PackageName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("StartOfJourney")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("BookingId");
+
+                    b.ToTable("Bookings");
+                });
+
+            modelBuilder.Entity("Bigbang3API.Models.BookingBill", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("PackageDetailsPackageId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("bookingDetailsBookingId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PackageDetailsPackageId");
+
+                    b.HasIndex("bookingDetailsBookingId");
+
+                    b.ToTable("BookingBills");
+                });
 
             modelBuilder.Entity("Bigbang3API.Models.Imagetbl", b =>
                 {
@@ -43,14 +103,11 @@ namespace Bigbang3API.Migrations
 
             modelBuilder.Entity("Bigbang3API.Models.Testimonial", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("TestimonialId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TestimonialId"));
 
                     b.Property<string>("Message")
                         .HasColumnType("nvarchar(max)");
@@ -58,9 +115,22 @@ namespace Bigbang3API.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.HasKey("TestimonialId");
 
                     b.ToTable("Testimonial");
+                });
+
+            modelBuilder.Entity("Bigbang3API.Models.Tour_gallery", b =>
+                {
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Image");
+
+                    b.ToTable("Tour_gallery");
                 });
 
             modelBuilder.Entity("Bigbang3API.Models.User", b =>
@@ -73,6 +143,9 @@ namespace Bigbang3API.Migrations
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsApproval")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
@@ -88,47 +161,13 @@ namespace Bigbang3API.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("Booking", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("Departure")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("NumberOfAdult")
-                        .HasColumnType("int");
-
-                    b.Property<int>("NumberOfChildren")
-                        .HasColumnType("int");
-
-                    b.Property<int>("NumberOfInfant")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PackageId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("TotalCost")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("TravelerName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Bookings");
-                });
-
             modelBuilder.Entity("Package", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("PackageId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PackageId"));
 
                     b.Property<string>("Accommodation")
                         .IsRequired()
@@ -141,16 +180,18 @@ namespace Bigbang3API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("ChildWithBedCost")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("ChildWithoutBedCost")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<string>("ChildCost")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Duration")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Exclusions")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -161,6 +202,10 @@ namespace Bigbang3API.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Inclusions")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -169,9 +214,24 @@ namespace Bigbang3API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("PackageId");
 
                     b.ToTable("Packages");
+                });
+
+            modelBuilder.Entity("Bigbang3API.Models.BookingBill", b =>
+                {
+                    b.HasOne("Package", "PackageDetails")
+                        .WithMany()
+                        .HasForeignKey("PackageDetailsPackageId");
+
+                    b.HasOne("Bigbang3API.Models.Booking", "bookingDetails")
+                        .WithMany()
+                        .HasForeignKey("bookingDetailsBookingId");
+
+                    b.Navigation("PackageDetails");
+
+                    b.Navigation("bookingDetails");
                 });
 #pragma warning restore 612, 618
         }

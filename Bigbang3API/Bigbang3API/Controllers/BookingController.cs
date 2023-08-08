@@ -1,18 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Bigbang3API.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Bigbang3API.Data;
+using Bigbang3API.Models;
 
-namespace Bigbang3API.Controllers {  
+namespace Bigbang3API.Controllers
+{
     [Route("api/[controller]")]
     [ApiController]
     public class BookingsController : ControllerBase
     {
-        private readonly TouristDbContext _context; 
-        public BookingsController(TouristDbContext context) 
+        private readonly TouristDbContext _context;
+
+        public BookingsController(TouristDbContext context)
         {
             _context = context;
         }
@@ -21,14 +25,21 @@ namespace Bigbang3API.Controllers {
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Booking>>> GetBookings()
         {
-            var bookings = await _context.Bookings.ToListAsync();
-            return Ok(bookings);
+            if (_context.Bookings == null)
+            {
+                return NotFound();
+            }
+            return await _context.Bookings.ToListAsync();
         }
 
         // GET: api/Bookings/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Booking>> GetBooking(int id)
         {
+            if (_context.Bookings == null)
+            {
+                return NotFound();
+            }
             var booking = await _context.Bookings.FindAsync(id);
 
             if (booking == null)
@@ -36,22 +47,78 @@ namespace Bigbang3API.Controllers {
                 return NotFound();
             }
 
-            return Ok(booking);
+            return booking;
+        }
+
+        // PUT: api/bookings/5
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutBooking(int id, Booking booking)
+        {
+            if (id != booking.BookingId)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(booking).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!BookingExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
         }
 
         // POST: api/Bookings
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Booking>> PostBooking(Booking booking)
         {
-            if (!ModelState.IsValid)
+            if (_context.Bookings == null)
             {
-                return BadRequest(ModelState);
+                return Problem("Entity set 'HealthcareDbContext.Patients'  is null.");
             }
-
             _context.Bookings.Add(booking);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetBooking", new { id = booking.Id }, booking);
+            return CreatedAtAction("GetBooking", new { id = booking.BookingId }, booking);
+        }
+
+        // DELETE: api/Bookings/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteBooking(int id)
+        {
+            if (_context.Bookings == null)
+            {
+                return NotFound();
+            }
+            var patient = await _context.Bookings.FindAsync(id);
+            if (patient == null)
+            {
+                return NotFound();
+            }
+
+            _context.Bookings.Remove(patient);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool BookingExists(int id)
+        {
+            return (_context.Bookings?.Any(e => e.BookingId == id)).GetValueOrDefault();
         }
     }
 }

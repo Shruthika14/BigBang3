@@ -1,10 +1,9 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 public class Package
 {
     [Key]
-    public int Id { get; set; }
+    public int PackageId { get; set; }
 
     [Required]
     public string? Title { get; set; }
@@ -30,10 +29,15 @@ public class Package
     public decimal AdultCost { get; set; }
 
     [Required]
-    public decimal ChildWithBedCost { get; set; }
+    public string? ChildCost { get; set; }
 
     [Required]
-    public decimal ChildWithoutBedCost { get; set; }
+    public string? Inclusions { get; set; }
 
-    public string? ImageUrl { get; set; } // Property to store the image URL
+    [Required]
+    public string? Exclusions { get; set; }
+   
+    public string? ImageUrl { get; set; }
+
+
 }

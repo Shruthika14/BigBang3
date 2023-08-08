@@ -1,7 +1,13 @@
+
+using bigbang3api.repositories.interfaces;
 using Bigbang3API.Data;
-using Bigbang3API.Models;
+using Bigbang3API.Repositories;
 using Bigbang3API.Repositories.Interfaces;
 using Bigbang3API.Repositories.Services;
+using Bigbang3API.Repository.Interface;
+using Bigbang3API.Repository.Service;
+using Bigbang3API.Services;
+
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,7 +18,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IUser, UserServices>();
+builder.Services.AddScoped<IUser,UserServices>();
+builder.Services.AddScoped<IPackage, PackageService>();
+builder.Services.AddScoped<IBookingServices, BookingServices>();
+builder.Services.AddScoped<IGallery,ImageService>();
 builder.Services.AddCors(opts =>
 {
     opts.AddPolicy("CORS", options =>

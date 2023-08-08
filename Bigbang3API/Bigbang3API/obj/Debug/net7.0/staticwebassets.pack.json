@@ -1,12 +1,184 @@
 {
   "Files": [
     {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\02ad31c0-b3b1-49ad-8759-ba3ca8330d77.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\02ad31c0-b3b1-49ad-8759-ba3ca8330d77.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\202c400e-f3da-4989-9e67-da62c4949035.png",
+      "PackagePath": "staticwebassets\\Gallery\\202c400e-f3da-4989-9e67-da62c4949035.png"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\282fc2f0-652d-4cd6-b4f3-83944a9b3e33.jpeg",
+      "PackagePath": "staticwebassets\\Gallery\\282fc2f0-652d-4cd6-b4f3-83944a9b3e33.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\2dfc6c4a-2ab5-4b1c-85c5-a68b17416dc0.png",
+      "PackagePath": "staticwebassets\\Gallery\\2dfc6c4a-2ab5-4b1c-85c5-a68b17416dc0.png"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\317de402-70a2-45a0-af9f-1d018b571e92.png",
+      "PackagePath": "staticwebassets\\Gallery\\317de402-70a2-45a0-af9f-1d018b571e92.png"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\31980c89-eb8d-4ab7-a0b4-d55d1c45a889.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\31980c89-eb8d-4ab7-a0b4-d55d1c45a889.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\34fc59c8-ed31-4f7a-95e1-417d14d1b0b8.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\34fc59c8-ed31-4f7a-95e1-417d14d1b0b8.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\371c1afa-935f-4d04-8280-0ab944a37f8c.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\371c1afa-935f-4d04-8280-0ab944a37f8c.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\42fe86e4-ef80-4f86-98b4-b3e0605ca509.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\42fe86e4-ef80-4f86-98b4-b3e0605ca509.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\4625e86c-9ada-40cc-97f9-ebf98ba7a888.jpeg",
+      "PackagePath": "staticwebassets\\Gallery\\4625e86c-9ada-40cc-97f9-ebf98ba7a888.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\4ed0d74a-1991-4ec4-8b70-f476bcd0eb82.jpeg",
+      "PackagePath": "staticwebassets\\Gallery\\4ed0d74a-1991-4ec4-8b70-f476bcd0eb82.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\5c20d041-980d-48af-b392-19bb4dce60ed.jpeg",
+      "PackagePath": "staticwebassets\\Gallery\\5c20d041-980d-48af-b392-19bb4dce60ed.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\99fee069-52c7-44cd-b001-59b30a559125.jpeg",
+      "PackagePath": "staticwebassets\\Gallery\\99fee069-52c7-44cd-b001-59b30a559125.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\Destination6.png",
+      "PackagePath": "staticwebassets\\Gallery\\Destination6.png"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\af938f3e-e7da-4370-9b4f-aea92caa454b.jpeg",
+      "PackagePath": "staticwebassets\\Gallery\\af938f3e-e7da-4370-9b4f-aea92caa454b.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\af95223e-60f4-4141-80bd-1546a497f49b.jpeg",
+      "PackagePath": "staticwebassets\\Gallery\\af95223e-60f4-4141-80bd-1546a497f49b.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\b757b5ef-3b6c-4fcc-bfe9-81e469ea4e53.png",
+      "PackagePath": "staticwebassets\\Gallery\\b757b5ef-3b6c-4fcc-bfe9-81e469ea4e53.png"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\blog2.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\blog2.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\c432e8b7-e2b5-4ac8-91c1-64ad9e55d1d5.png",
+      "PackagePath": "staticwebassets\\Gallery\\c432e8b7-e2b5-4ac8-91c1-64ad9e55d1d5.png"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\ccb44d2f-0760-4abd-9351-cb133c5ec805.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\ccb44d2f-0760-4abd-9351-cb133c5ec805.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\e3d79c2c-b094-4851-b383-6eefe0d643d0.png",
+      "PackagePath": "staticwebassets\\Gallery\\e3d79c2c-b094-4851-b383-6eefe0d643d0.png"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\e42fedf0-767f-45fb-b63e-508d23304e8d.jpeg",
+      "PackagePath": "staticwebassets\\Gallery\\e42fedf0-767f-45fb-b63e-508d23304e8d.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\e87b6ff0-9f78-475a-a1b0-4ebaff677679.jpeg",
+      "PackagePath": "staticwebassets\\Gallery\\e87b6ff0-9f78-475a-a1b0-4ebaff677679.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\eef0d9b0-3399-4e95-a61a-c37aa107b8fa.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\eef0d9b0-3399-4e95-a61a-c37aa107b8fa.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\f029f99c-b14f-4027-a3f9-dc2240dee50f.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\f029f99c-b14f-4027-a3f9-dc2240dee50f.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\f73515bb-febe-4d6c-9f6e-18a29c58ffbc.jpeg",
+      "PackagePath": "staticwebassets\\Gallery\\f73515bb-febe-4d6c-9f6e-18a29c58ffbc.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Gallery\\france.jpeg",
+      "PackagePath": "staticwebassets\\Gallery\\france.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Images\\Empathy",
+      "PackagePath": "staticwebassets\\Images"
+    },
+    {
       "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Images\\empathymap",
       "PackagePath": "staticwebassets\\Images"
     },
     {
       "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Images\\f",
       "PackagePath": "staticwebassets\\Images"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Images\\tajmahal",
+      "PackagePath": "staticwebassets\\Images"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\2c28432e-da09-4171-a89b-0c2bcb77a2af.png",
+      "PackagePath": "staticwebassets\\Package_images\\2c28432e-da09-4171-a89b-0c2bcb77a2af.png"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\2c796095-9984-4cb3-b462-5945f4599b13.png",
+      "PackagePath": "staticwebassets\\Package_images\\2c796095-9984-4cb3-b462-5945f4599b13.png"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\2ea71863-22a5-4417-aaab-72b4e14b9e60.png",
+      "PackagePath": "staticwebassets\\Package_images\\2ea71863-22a5-4417-aaab-72b4e14b9e60.png"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\509fe59d-656d-4c38-85d5-7964fe0536fb.jpg",
+      "PackagePath": "staticwebassets\\Package_images\\509fe59d-656d-4c38-85d5-7964fe0536fb.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\5c69b0dd-6d52-412b-b556-ac659fdf2509.jpg",
+      "PackagePath": "staticwebassets\\Package_images\\5c69b0dd-6d52-412b-b556-ac659fdf2509.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\65b73eab-3afc-468d-8081-e570bca3eea1.jpg",
+      "PackagePath": "staticwebassets\\Package_images\\65b73eab-3afc-468d-8081-e570bca3eea1.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\7b5af7cd-a9ea-4f74-9a4c-642277c1ba14.jpeg",
+      "PackagePath": "staticwebassets\\Package_images\\7b5af7cd-a9ea-4f74-9a4c-642277c1ba14.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\7f4ee6e8-4b1c-4bf3-830b-98dd2ce83984.jpg",
+      "PackagePath": "staticwebassets\\Package_images\\7f4ee6e8-4b1c-4bf3-830b-98dd2ce83984.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\9779b143-752d-4bf2-814a-80655895276b.jpeg",
+      "PackagePath": "staticwebassets\\Package_images\\9779b143-752d-4bf2-814a-80655895276b.jpeg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\9b4f104c-b0ff-4c88-b9e3-8bc9681f9ab3.jpg",
+      "PackagePath": "staticwebassets\\Package_images\\9b4f104c-b0ff-4c88-b9e3-8bc9681f9ab3.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\a5a30d74-ee69-4566-8619-d8576fd3474a.png",
+      "PackagePath": "staticwebassets\\Package_images\\a5a30d74-ee69-4566-8619-d8576fd3474a.png"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\b6bceab0-469e-4df9-a5a9-d462a2074277.png",
+      "PackagePath": "staticwebassets\\Package_images\\b6bceab0-469e-4df9-a5a9-d462a2074277.png"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\c030e6dd-c9fe-4faf-9e52-6a4d7d105d5a.jpg",
+      "PackagePath": "staticwebassets\\Package_images\\c030e6dd-c9fe-4faf-9e52-6a4d7d105d5a.jpg"
+    },
+    {
+      "Id": "D:\\Kanini Training\\Big bang 3\\Bigbang3API\\Bigbang3API\\wwwroot\\Package_images\\cbd81106-cd3c-4f70-9162-72f622496b70.png",
+      "PackagePath": "staticwebassets\\Package_images\\cbd81106-cd3c-4f70-9162-72f622496b70.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Bigbang3API.Microsoft.AspNetCore.StaticWebAssets.props",

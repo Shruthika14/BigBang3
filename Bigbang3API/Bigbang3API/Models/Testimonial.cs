@@ -1,12 +1,13 @@
-﻿namespace Bigbang3API.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Bigbang3API.Models
 {
-    
     public class Testimonial
     {
-        public int Id { get; set; }
+        [Key]
+        public int TestimonialId { get; set; }
         public string? Name { get; set; }
         public string? Message { get; set; }
-        public DateTime Date { get; set; }
+        public int Rating { get; set; } 
     }
-
 }
